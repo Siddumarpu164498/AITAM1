@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Bootstrap</title>
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"/>
+     <script defer
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Event Registration Form</h1>
+        <h2>Personal Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" class="form-control" id="contactNumber" placeholder="Enter your contact number">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="age">Age (Optional):</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Choose or type your city">
+            </div><br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+          <div class="container mt-5"> 
+            <h2>Event Details</h2>   
+            <form>
+                <div class="form-group">
+                    <label for="ticketType">Ticket Type:</label><br>
+                    <select class="form-control" id="ticketType">
+                        <option>General</option>
+                        <option>VIP</option>
+                        <option>Student</option>
+                    </select><br>
+                </div>
+                <div class="form-group">
+                    <label for="sessions">Sessions to Attend:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="keynotes" value="keynotes">
+                        <label class="form-check-label" for="keynotes">Keynotes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="networking" value="networking">
+                        <label class="form-check-label" for="networking">Networking</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="workshops" value="workshops">
+                        <label class="form-check-label" for="workshops">Workshops</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="panelDiscussions" value="panelDiscussions">
+                        <label class="form-check-label" for="panelDiscussions">Panel Discussions</label>
+                    </div>
+                </div><br>
+                <div class="form-group">
+                    <label for="foodPreference">Food Preference:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="foodPreference" id="vegetarian" value="vegetarian">
+                        <label class="form-check-label" for="vegetarian">Vegetarian</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="foodPreference" id="nonVegetarian" value="nonVegetarian">
+                        <label class="form-check-label" for="nonVegetarian">Non-Vegetarian</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="foodPreference" id="vegan" value="vegan">
+                        <label class="form-check-label" for="vegan">Vegan</label>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <h2>Additional Information</h2>
+                    <label for="linkedinProfile">LinkedIn Profile:</label>
+                    <input type="url" class="form-control" id="linkedinProfile" placeholder="https://linkedin.com/in/username">
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments or Preferences:</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="profilePicture">Upload Profile Picture:</label>
+                    <input type="file" id="profilePicture">
+                </div>
+                <div class="form-group">
+                    <label for="techSavviness">Tech Savviness(1-10):</label>
+                    <input type="range" class="form-control-range" id="techSavviness" min="1" max="10" value="5">
+                </div><br><br>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="termsAndConditions">
+                    <label class="form-check-label" for="termsAndConditions">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+                <button type="reset" class="btn btn-secondary">Reset Form</button>
+            </form>
+        </div>
+    
+</body>
+</html>
